@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios HTML</title>
+    <style>
+        #content {
+            /* 
+                30px em cima e em baixo
+                0px  nas laterais
+            */
+            padding: 30px 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exercicios HTML 5</h1> 
+    </header>
+    <nav>
+        <a href="exercicios/teste.html">00 - Teste </a> |
+        <a href="exercicios/tags-texto-01.html"> 01 - Tags de Texto</a>
+    </nav>
+    <section id="content">
+        
+    </section>
+    <footer> <!-- Rodapé --> 
+        <br>
+        Curso JavaScript 2020
+    </footer>
+    <script>
+        document.querySelectorAll('a').forEach(link => {
+            //Captura a 'section' pelo atributo '#id'
+            //id sempre hashtag, tag sempre ponto
+            const section = document.querySelector('#content')
+            link.onclick = function(e) {
+                //Utilizado para não navegar para outra pagina
+                e.preventDefault()
+                /*
+                    fetch é uma função recente no JavaScript, e é baseada
+                    em 'Promise'.
+                    Podemos fazer uma requisição 'Ajax' sem necessitar
+                    bibliotecas. 
+                */
+                fetch(link.href)
+                    .then(response =>  response.text())
+                    .then(response_html => section.innerHTML = response_html)   
+            }
+        })
+    </script>
+
+</body>
+</html>
