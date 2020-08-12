@@ -5,11 +5,11 @@
         <ul>
         <li>
             <span>app</span>
-        <ul>
-            <li>produto</li>
-            <li>usuario.js</li>
-            <li>venda.js</li>
-        </ul>
+            <ul>
+                <li>produto</li>
+                <li>usuario.js</li>
+                <li>venda.js</li>
+            </ul>
         </li>
         <li>
             <span>config</span>
@@ -53,5 +53,22 @@ let directories = document.querySelectorAll('li > span')
         }
         
     }
-            
+
+let tag = document.querySelectorAll('span') 
+    for(let j = 0; j < tag.length; j++){
+        let t = tag[j]
+        console.log(t)
+        tag[j].innerHTML = `<b> ${t.textContent} </b>` //Ou t.outerText
+
+    }
+
+/* 
+        debbuger
+    document.querySelectorAll('span').forEach(element => {
+        console.log(element)
+        element.innerHTML = `<b> ${element.outerText} </b>`
+    })
+    
+
+*/
 </script>
