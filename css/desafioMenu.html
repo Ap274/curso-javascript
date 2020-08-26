@@ -7,7 +7,88 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
-        /* ... */
+        *{
+            font-family: 'Oswald';
+            text-decoration: none;
+            color: white;
+            font-style: normal;
+        }
+        body {
+            /* margin-left: 0px; */
+            /* margin-top: 0px; */
+            margin: 0px;
+            background-color: lightgray;
+        }
+        .cabecalho {
+            position: relative;
+        }
+        .logo {
+            background-color: #333;
+            box-shadow: 0px 3px 0px 0px skyblue;
+        }
+        .menu-toggle{
+            /* display: block; */
+            background-color: black;
+            position: absolute;
+            top: 40px;
+            right: 20px;
+        }
+        li {
+            color: white;
+            padding: 10px 10px;
+            display: inline-block;
+            /* background-color: black; */
+        }
+        .autenticacao{
+            position: absolute;
+            /* float: right; */
+            right: 2px;
+            top: 40px;
+            width: 200px ;
+            /* color: white; */
+        }
+        .autenticacao a {
+            padding: 10px;
+        }
+        .menu{
+            position: absolute;
+            width: 360px;
+            height: 80px;
+            top: 12px;
+            float: left;
+            left: 300px;
+            font-size: 18px;
+            /* color: white; */
+        }
+        .botao {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            background-color: red;
+            border-radius: 30px;    
+        }
+
+        .menu a:hover{
+            background-color: skyblue;
+            color: black;
+            padding: 20px 20px;
+        }
+        @media (min-width: 679px){
+            .menu-toggle{
+                display: none;
+            }
+        }
+        @media (max-width: 910px){
+            .autenticacao{
+                display: none;
+            }
+        }
+        @media (max-width: 680px) {
+            .menu {
+                display: none;
+            }
+        }
+
     </style>
 </head>
 
@@ -38,7 +119,7 @@
             </ul>
         </nav>
         <aside class="autenticacao">
-            <a href="#login">Login</a>
+            <a href="#login" class="login">Login</a>
             <a href="#registar" class="botao destaque">Registrar</a>
         </aside>
     </header>
