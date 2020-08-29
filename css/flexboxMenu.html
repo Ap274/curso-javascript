@@ -38,7 +38,7 @@
         
         .menu a:hover {
             background-color: #4faddb;
-            color: #000;
+            color: #000; 
         }
         
         .cabecalho .botao {
@@ -51,9 +51,21 @@
             background: #f50a31;
             color: #fff;
         }
-        /* ==================== */
-        /* Solução com Flex Box */
-        /* ==================== */
+
+        .cabecalho{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .menu ul{
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        /* .autenticacao {
+            display: flex; 
+        } */
     </style>
 </head>
 
