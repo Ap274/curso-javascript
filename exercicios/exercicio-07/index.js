@@ -1,4 +1,6 @@
 const bhaskara = (ax2, bx, c) => {
+    console.log("Exercício 07")
+    console.log("------------")
     let delta = bx**2 - 4*ax2*c
     if (delta > 0){
         let x1 = (-bx + delta**(1/2))/(2*ax2)
@@ -15,6 +17,7 @@ const bhaskara = (ax2, bx, c) => {
         const x = []
         console.log('Delta é negativo.')
     }
+    console.log("------------")
 }
 
-bhaskara(3,5, -5)
+module.exports = {bhaskara}

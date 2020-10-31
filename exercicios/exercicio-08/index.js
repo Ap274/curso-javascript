@@ -15,13 +15,20 @@ function avaliaPont(pont) {
         }else if (listaPontos[i] < menorPont){
             menorPont = listaPontos[i]
             piorJogo = i + 1
-        }        
+        } 
+        console.log(`maior pontuação = ${maiorPont}`) 
+        console.log(`menor pontuação = ${menorPont}`)      
     }
     return [qtdQuebraRecordes, piorJogo]
 }
 
-console.log(avaliaPont(stringPont))
 
+const calculaPontuacoes = () => {
+    console.log("Exercício 08")
+    console.log("------------")
+    console.log(avaliaPont(stringPont))
+    console.log("------------")
+}
 
-
-********REVER ESSA QUESTÃO**********
+module.exports = {calculaPontuacoes}
+///REVER ESSA QUESTÃO**********
