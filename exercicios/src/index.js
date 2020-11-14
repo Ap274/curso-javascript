@@ -20,3 +20,7 @@ exercicio05.format(0.1 + 0.2);
 exercicio06.calcularJuros();
 exercicio07.bhaskara(3, 5, -5);
 exercicio08.calculaPontuacoes();
+
+if ('test' == 'test') {
+  console.log('teste ok');
+}
