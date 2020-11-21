@@ -1,13 +1,22 @@
 const logger = require('../../logger');
 
-function sum(a, b) {
+const sum = (a, b) => {
   logger.info('Exercicio 01');
   logger.info('-------------');
+  const result = {
+    soma: a + b,
+    subtracao: a - b,
+    multiplicacao: a * b,
+    divisao: a / b,
+  };
+
   logger.info(
-    `soma = ${a + b}, subt = ${a - b}, multp = ${a * b} e div = ${a / b} `,
+    `soma=${result.soma}, subt=${result.subtracao}, multp= ${result.multiplicacao} e div= ${result.divisao}`
   );
   logger.info('-------------');
-}
+
+  return result;
+};
 
 // sum(2,5)
 

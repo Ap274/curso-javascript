@@ -7,7 +7,7 @@
     "lint": "eslint src/**/*.js --fix",
     "start": "clear && nodemon",
     "dev": "clear && nodemon",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "husky": {
     "hooks": {
