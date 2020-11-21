@@ -1,8 +1,10 @@
+const logger = require('../../logger');
+
 const invest = (dvd, div) => {
-  console.log('Exercício 04');
-  console.log('------------');
-  console.log(`Resultado = ${dvd / div}, onde o resto é = ${dvd % div}`);
-  console.log('------------');
+  logger.info('Exercício 04');
+  logger.info('------------');
+  logger.info(`Resultado = ${dvd / div}, onde o resto é = ${dvd % div}`);
+  logger.info('------------');
 };
 
 module.exports = { invest };

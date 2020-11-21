@@ -1,9 +1,11 @@
+const logger = require('../../logger');
+
 const format = (a) => {
-  console.log('Exercício 05');
-  console.log('------------');
+  logger.info('Exercício 05');
+  logger.info('------------');
   const valor = `R$ ${a.toFixed(2).toString().replace('.', ',')}`;
-  console.log(valor);
-  console.log('------------');
+  logger.info(valor);
+  logger.info('------------');
 };
 
 module.exports = { format };
