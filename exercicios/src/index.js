@@ -2,7 +2,7 @@ const logger = require('../logger');
 
 // const exercicio01 = require('./exercicio-01');
 // const exercicio02 = require('./exercicio-02');
-const exercicio03 = require('./exercicio-03');
+// const exercicio03 = require('./exercicio-03');
 const exercicio04 = require('./exercicio-04');
 const exercicio05 = require('./exercicio-05');
 const exercicio06 = require('./exercicio-06');
@@ -16,7 +16,7 @@ logger.info('-------------------------------------------');
 
 // exercicio01.sum(1, 2);
 // exercicio02.calcularTriangulos();
-exercicio03.elev(2, 3);
+// exercicio03.elev(2, 3);
 exercicio04.invest(11, 4);
 exercicio05.format(0.1 + 0.2);
 exercicio06.calcularJuros();

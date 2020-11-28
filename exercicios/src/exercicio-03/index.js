@@ -1,10 +1,6 @@
-const logger = require('../../logger');
-
-const elev = (a, b) => {
-  logger.info('Exercicio 03');
-  logger.info('------------');
-  logger.info(a ** b);
-  logger.info('------------');
+const elev = (base, exp) => {
+  const resultado = base ** exp;
+  return resultado;
 };
 
 module.exports = { elev };
