@@ -1,7 +1,7 @@
 const logger = require('../logger');
 
-const exercicio01 = require('./exercicio-01');
-const exercicio02 = require('./exercicio-02');
+// const exercicio01 = require('./exercicio-01');
+// const exercicio02 = require('./exercicio-02');
 const exercicio03 = require('./exercicio-03');
 const exercicio04 = require('./exercicio-04');
 const exercicio05 = require('./exercicio-05');
@@ -14,8 +14,8 @@ logger.info('*** Lista de Exercícios Javascript 2020 ***');
 logger.info('-------------------------------------------');
 // npm run dev or npm start
 
-exercicio01.sum(1, 2);
-exercicio02.calcularTriangulos();
+// exercicio01.sum(1, 2);
+// exercicio02.calcularTriangulos();
 exercicio03.elev(2, 3);
 exercicio04.invest(11, 4);
 exercicio05.format(0.1 + 0.2);
