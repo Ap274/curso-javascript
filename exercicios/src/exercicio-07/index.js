@@ -1,24 +1,15 @@
-const logger = require('../../logger');
-
 const bhaskara = (ax2, bx, c) => {
-  logger.info('Exercício 07');
-  logger.info('------------');
+  const resultados = [];
   const delta = bx ** 2 - 4 * ax2 * c;
-  if (delta > 0) {
-    const x1 = (-bx + delta ** (1 / 2)) / (2 * ax2);
-    const x2 = (-bx - delta ** (1 / 2)) / (2 * ax2);
-    const x = [x1, x2];
-    logger.info(`As raízes são: ${x}`);
-  } else if (delta === 0) {
-    const x1 = (-bx + delta ** (1 / 2)) / (2 * ax2);
-    const x2 = (-bx - delta ** (1 / 2)) / (2 * ax2);
-    const x = [x1, x2];
-    logger.info(`As raízes são: ${x}`);
-  }
   if (delta < 0) {
-    logger.info('Delta é negativo.');
+    resultados.push('Delta é negativo');
+  } else {
+    const x1 = (((-bx + Math.sqrt(delta)) / 2) * 1) / ax2;
+    const x2 = (((-bx - Math.sqrt(delta)) / 2) * 1) / ax2;
+    resultados.push(x1);
+    resultados.push(x2);
   }
-  logger.info('------------');
+  return resultados;
 };
 
 module.exports = { bhaskara };
